@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New StyleUp</title>
+    <link rel="icon" href="img/logo.webp"></link>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font- Awesomr Incons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>New StyleUp</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- side navebar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+    </div>
+
+
+    <!-- Contact Details -->
+    <div class="contact">
+        <div class="contact-container">
+            <h1 style="text-align: center;">Contact Us</h1><br><br>
+
+            <form id="contact-form">
+                <!-- First Name -->
+                <div class="form-item">
+                    <label for="first-name">First Name <span class="required-input">*</span></label><br>
+                    <input type="text" name="first-name" id="first-name">
+                    <p class="form-alert">This field is required</p>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-item">
+                    <label for="last-name">Last Name <span class="required-input">*</span></label><br>
+                    <input type="text" name="last-name" id="last-name">
+                    <p class="form-alert">This field is required</p>
+                </div>
+
+                <!-- Email -->
+                <div class="form-item">
+                    <label for="email">Email Address <span class="required-input">*</span></label><br>
+                    <input type="email" name="email" id="email">
+                    <p class="form-alert">Please enter a valid email address</p>
+                </div>
+
+                <!-- Message -->
+                <div class="form-item">
+                    <label for="message">Message <span class="required-input">*</span></label><br>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                    <p class="form-alert">Please enter your query</p>
+                </div>
+
+                <!-- Consent Checkbox -->
+                <div class="form-item">
+                    <input type="checkbox" name="consent" id="consent">
+                    <label for="consent">I consent to being contacted by the team <span
+                            class="required-input">*</span></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Success Message -->
+        <div id="success-message" class="success-message" style="display: none;">
+            <div class="message-header">
+                <p>Message Sent!</p>
+            </div>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">New StyleUp</h2><br>
+                <p>Shop the best, leave the rest—where your happiness meets unbeatable deals!"
+                    "Indulge in joy, discover the trends, and let your shopping spree never end!</p><br>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <p>NewStyleUp2025@gmail.com</p>
+    </div>
+
+    <script src="collection.js"></script>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
